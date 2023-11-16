@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/itc-slider.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Елена Фролкова</title>
   </head>
@@ -18,14 +19,21 @@
         <div class="header__inner">
           <div class="header__top">
             <nav class="header__nav">
-              <a class="logo__link" href="#">
-                <img src="./img/logo.png" alt="Логотип" />
-              </a>
+              <img class="header__logo" src="./img/logo.png" alt="Логотип" />
 
               <button class="burger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="27"
+                  viewBox="0 0 30 27"
+                  fill="none"
+                >
+                  <path
+                    d="M0 0H30V3.33333H0V0ZM0 11.6667H20V15H0V11.6667ZM0 23.3333H30V26.6667H0V23.3333Z"
+                    fill="white"
+                  />
+                </svg>
               </button>
 
               <ul class="menu">
@@ -49,8 +57,7 @@
 
               <a class="social-link" href="#" target="_blank">
                 <svg
-                  width="23"
-                  height="20"
+                  class="telegram"
                   viewBox="0 0 23 20"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -64,8 +71,7 @@
               </a>
               <a class="social-link" href="#" target="_blank">
                 <svg
-                  width="28"
-                  height="28"
+                  class="wats"
                   viewBox="0 0 28 28"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -109,13 +115,33 @@
                 width="220"
                 height="45"
               />
-              <img
-                class="header__company-logo"
-                src="./img/pixian.png"
-                alt="Ингострах"
-                width="216"
-                height="57"
-              />
+
+              <div
+                class="itc-slider"
+                data-slider="itc-slider"
+                data-autoplay="true"
+                data-interval="2000"
+              >
+                <div class="itc-slider-wrapper">
+                  <div class="itc-slider-items">
+                    <div class="itc-slider-item">
+                      <img class="header__company-logo" src="./img/pixian1.png" alt="Ингострах" />
+                    </div>
+                    <div class="itc-slider-item">
+                      <img class="header__company-logo" src="./img/pixian2.png" alt="Ингострах" />
+                    </div>
+                    <div class="itc-slider-item">
+                      <img class="header__company-logo" src="./img/pixian3.png" alt="Ингострах" />
+                    </div>
+                    <div class="itc-slider-item">
+                      <img class="header__company-logo" src="./img/pixian4.png" alt="Ингострах" />
+                    </div>
+                    <div class="itc-slider-item">
+                      <img class="header__company-logo" src="./img/pixian5.png" alt="Ингострах" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -182,6 +208,7 @@
                       </div>
                     </div>
                   </li>
+
                   <li class="trust__item">
                     <div class="trust__item-circle-border">
                       <div class="trust__item-circle">
@@ -194,6 +221,7 @@
                       </div>
                     </div>
                   </li>
+
                   <li class="trust__item">
                     <div class="trust__item-circle-border">
                       <div class="trust__item-circle">
@@ -226,8 +254,7 @@
                     <div class="social">
                       <a class="social-link" href="#" target="_blank">
                         <svg
-                          width="23"
-                          height="20"
+                          class="telegram"
                           viewBox="0 0 23 20"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -242,8 +269,7 @@
 
                       <a class="social-link" href="#" target="_blank">
                         <svg
-                          width="28"
-                          height="28"
+                          class="wats"
                           viewBox="0 0 28 28"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -311,7 +337,7 @@
                 У вас уже есть <span>предложение, но вы хотите лучше?</span>
               </h2>
               <div class="offer__box">
-                <button class="offer__btn js-modal" type="button">
+                <button class="offer__btn js-modal1" type="button">
                   Получить лучшее предложение
                 </button>
               </div>
@@ -360,14 +386,14 @@
                   <div class="direct__item direct__item-auto">
                     <h3 class="direct__subtitle">Автомобили</h3>
                     <span class="direct__price">от 5 млн.руб</span>
-                    <button class="direct__btn js-modal">Застраховать</button>
+                    <button class="direct__btn js-modal1">Застраховать</button>
                   </div>
                 </div>
                 <div class="direct__border">
                   <div class="direct__item direct__item-house">
                     <h3 class="direct__subtitle">Недвижимость</h3>
                     <span class="direct__price">от 15 млн.руб</span>
-                    <button class="direct__btn js-modal1">Застраховать</button>
+                    <button class="direct__btn js-modal">Застраховать</button>
                   </div>
                 </div>
                 <div class="direct__border">
@@ -399,8 +425,7 @@
                 <div class="social">
                   <a class="social-link" href="#" target="_blank">
                     <svg
-                      width="23"
-                      height="20"
+                      class="telegram"
                       viewBox="0 0 23 20"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -415,8 +440,7 @@
 
                   <a class="social-link" href="#" target="_blank">
                     <svg
-                      width="28"
-                      height="28"
+                      class="wats"
                       viewBox="0 0 28 28"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -526,7 +550,7 @@
               class="popup__input popup__input-intr"
               type="text"
               placeholder="Выберите что вас интересует..."
-              value=""
+              value="«Хочу получить лучшее предложение»"
               name="interesting"
               required
             />
@@ -548,6 +572,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/itc-slider.js" defer></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

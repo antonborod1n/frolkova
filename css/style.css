@@ -89,14 +89,6 @@ body {
   border: none;
   width: 45px;
 }
-
-.burger-menu span {
-  display: block;
-  width: 30px;
-  height: 2px;
-  background-color: #c2a36c;
-  margin-bottom: 10px;
-}
 .header {
   position: relative;
   background-image: url('../img/fs-bg.png');
@@ -144,6 +136,7 @@ body {
   border-bottom: 2px solid #ffffff;
   padding-bottom: 13px;
 }
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -194,6 +187,14 @@ body {
   border-radius: 57px;
   border: 2px solid #c2a36c;
   cursor: pointer;
+}
+.social-link .telegram {
+  width: 23px;
+  height: 20px;
+}
+.social-link .wats {
+  width: 28px;
+  height: 28px;
 }
 .social-link:hover {
   border: 2px solid rgba(194, 163, 108, 0.3);
@@ -1003,7 +1004,8 @@ body {
   align-items: center;
   text-align: center;
   width: 211px;
-  height: 53px;
+  min-height: 53px;
+  padding: 5px;
   color: #000;
   font-size: 13px;
   border-radius: 43px;
@@ -1028,39 +1030,30 @@ body {
 }
 
 @media (max-width: 1850px) {
+  .trust__img-cercle {
+    width: 484px;
+    height: 484px;
+  }
   .trust__img-box {
-    width: 300px;
+    width: 481px;
+    height: 481px;
+  }
+  .trust__inner {
+    justify-content: space-evenly;
   }
   .trust__left {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
+    padding: 0;
   }
-  .trust__inner {
-    justify-content: space-evenly;
-  }
-
-  .trust__left-item {
+  .trust__left-border {
     position: static;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 329px;
-    height: 60px;
-    padding: 5px 15px 5px 15px;
-    border-radius: 66px;
-    border: 1.5px solid #fff;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 0px 34px 0px rgba(194, 163, 108, 0.05);
-    backdrop-filter: blur(15px);
-  }
-  .trust__left-num {
-    font-size: 16px;
-  }
-  .trust__left-text {
-    font-size: 13px;
   }
 }
 
@@ -1090,9 +1083,35 @@ body {
   }
 }
 @media (max-width: 992px) {
+  .link-box {
+    display: block;
+    text-align: end;
+  }
+  .social-link {
+    display: inline-flex;
+    min-width: 40px;
+    height: 40px;
+  }
+  .social-link .telegram {
+    width: 17px;
+    height: 20px;
+  }
+  .social-link .wats {
+    width: 20px;
+    height: 20px;
+  }
+  .link-phone {
+    width: 143px;
+    height: 27px;
+    font-size: 9px;
+    margin-right: 0;
+    border-radius: 57px;
+    border: 1.5px solid #c2a36c;
+    margin-bottom: 17px;
+  }
   .menu {
     position: absolute;
-    top: 90px;
+    top: 75px;
     right: 0;
     left: 0;
     z-index: 1;
@@ -1125,45 +1144,69 @@ body {
   .burger-menu {
     display: block;
   }
+  .header {
+    background-image: none;
+  }
   .header__inner {
     flex-direction: column;
     align-items: flex-end;
   }
   .header__img {
-    display: none;
+    bottom: 85px;
+    width: 400px;
+  }
+  .header__img-line {
+    bottom: 100px;
+  }
+  .header__top {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding-top: 39px;
   }
   .header__nav {
+    display: block;
     width: 100%;
   }
+  .header__logo {
+    display: none;
+  }
   .header__company-box {
-    flex-wrap: wrap;
     gap: 15px;
-    padding: 15px 50px;
+    padding: 0px 28px;
     border-radius: 40px;
-    margin-bottom: 25px;
+    margin: 0 auto 25px;
   }
   .header__title {
-    font-size: 36px;
+    font-size: 15px;
+    text-align: center;
   }
   .header__content {
     height: 100%;
-    margin-top: 78px;
+    margin-top: 40px;
   }
   .header__content-box {
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 330px;
   }
   .header__name {
-    font-size: 13px;
-    width: 187px;
-    padding: 7px 24px 7px 24px;
+    display: none;
   }
   .header__slogan {
-    font-size: 15px;
+    font-size: 10px;
     margin-bottom: 25px;
+    text-align: center;
   }
   .header__btn {
-    font-size: 14px;
-    padding: 10px 20px 10px 20px;
+    font-size: 9px;
+    padding: 10px 17px;
+    height: 42px;
+    border: 1px solid #c2a36c;
+  }
+  .header__company-logo {
+    width: 125px;
+    height: auto;
   }
   .footer__content {
     padding: 30px 0;
@@ -1172,29 +1215,60 @@ body {
     display: none;
   }
   .footer__title {
-    font-size: 24px;
+    font-size: 20px;
   }
   .trust {
-    margin-bottom: 105px;
+    margin-bottom: 142px;
+  }
+  .trust__left-num {
+    font-size: 20px;
+  }
+  .trust__left-text {
+    font-size: 15px;
+  }
+  .trust__img-cercle {
+    width: 284px;
+    height: 284px;
+  }
+  .trust__img-box {
+    width: 281px;
+    height: 281px;
+  }
+  .trust:before,
+  .trust:after {
+    display: none;
   }
   .trust__inner {
-    gap: 80px;
+    gap: 100px;
   }
   .trust__title {
     font-size: 24px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+  }
+  .trust__item-circle-border {
+    width: 47px;
+    height: 47px;
+    top: -35px;
   }
   .trust__item-circle {
     top: -50px;
     right: 50%;
-    transform: translateX(50%);
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
+  }
+  .trust__item-circle img {
+    width: 20px;
+    height: 22px;
+  }
+  .trust__item-text-border {
+    width: 321px;
+    min-height: 45px;
   }
   .trust__item-text {
-    min-height: 50px;
+    width: 319px;
+    min-height: 42px;
     padding: 14px 45px 5px;
-    font-size: 13px;
+    font-size: 10px;
   }
   .trust__list {
     gap: 65px;
@@ -1202,39 +1276,54 @@ body {
   .call {
     padding: 0 0 75px;
   }
+  .call__wrapper {
+    height: 522px;
+  }
   .call__img {
     position: static;
-    max-width: 300px;
+    max-width: 239px;
   }
   .call__inner {
     flex-direction: column;
-    height: 100%;
-    border-radius: 25px;
+    height: 520px;
+    border-radius: 47px;
+    overflow: hidden;
   }
   .call__box {
     max-width: 100%;
+    text-align: center;
     padding-left: 0;
     padding: 30px 30px 0 30px;
   }
+  .call__box .link-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .call__box .link-phone {
+    width: 160px;
+    height: 42px;
+    margin-bottom: 0;
+    border: 2px solid #c2a36c;
+    font-size: 10px;
+  }
   .call__title {
-    font-size: 24px;
+    font-size: 23px;
   }
   .call__name {
-    font-size: 20px;
+    font-size: 15px;
   }
   .ind__inner {
-    margin-bottom: 60px;
+    margin-bottom: 85px;
   }
   .ind__title {
-    font-size: 36px;
-    margin-bottom: 30px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
   }
   .ind__item {
     border-radius: 25px;
-    padding: 15px 25px;
-  }
-  .ind__subtitle {
-    font-size: 24px;
+    padding: 60px 20px 25px 20px;
   }
   .ind__items {
     font-size: 16px;
@@ -1243,40 +1332,78 @@ body {
     font-size: 20px;
     margin-bottom: 18px;
   }
-  .offer {
-    margin-bottom: 60px;
-  }
-  .offer__inner {
-    height: 440px;
+  .offer__box {
+    margin: 0 auto;
   }
   .offer__title {
     font-size: 24px;
     padding-top: 0;
+    text-align: center;
+  }
+  .offer__btn {
+    width: 245px;
+    padding: 3px;
+    height: 43px;
+    font-size: 11px;
   }
   .loyalty {
     padding-bottom: 100px;
   }
   .loyalty__title {
-    font-size: 36px;
+    font-size: 21px;
+    margin-bottom: 60px;
+  }
+  .loyalty__item-sale {
+    font-size: 30px;
   }
   .loyalty__box {
     flex-direction: column;
-    gap: 40px;
+    align-items: center;
+    gap: 47px;
     margin-bottom: 80px;
   }
   .loyalty__text {
-    font-size: 26px;
+    font-size: 20px;
+  }
+  .loyalty__item-num {
+    font-size: 70px;
+  }
+  .loyalty__item-text {
+    font-size: 20px;
+  }
+  .direct__border {
+    width: 296px;
+    height: 412px;
+  }
+  .direct__item {
+    width: 294px;
+    height: 410px;
+  }
+  .direct__item {
+    background-size: 100%;
   }
   .direct__title {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 25px;
+    margin-bottom: 27px;
   }
   .direct__slogan {
-    font-size: 16px;
-    padding-bottom: 50px;
+    font-size: 11px;
+    padding-bottom: 60px;
+  }
+  .direct__subtitle {
+    font-size: 25px;
+  }
+  .direct__price {
+    font-size: 12px;
+    margin-bottom: 23px;
+  }
+  .direct__btn {
+    font-size: 13px;
+    padding: 5px 55px;
+    height: 45px;
   }
   .section__bottom {
-    padding-bottom: 155px;
+    padding-bottom: 117px;
   }
   .popup__inner {
     width: 90%;
@@ -1284,20 +1411,28 @@ body {
     padding: 20px;
   }
   .popup__title {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 25px;
     padding: 0;
     margin-bottom: 20px;
+  }
+  .popup__slogan {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .popup__input-intr {
+    background-size: 14px;
+    background-position: right 15px center;
   }
   .popup__form {
     gap: 10px;
     width: 470px;
   }
   .popup__input {
-    font-size: 16px;
+    font-size: 11px;
     width: 100%;
-    height: 62px;
-    padding: 20px;
+    height: 42px;
+    padding: 10px 40px 10px 15px;
   }
   .popup__close {
     width: 40px;
@@ -1305,39 +1440,46 @@ body {
   }
   .popup__btn {
     width: 100%;
-    height: 60px;
-    font-size: 16px;
+    height: 50px;
+    font-size: 13px;
+  }
+  .popup__btn-intr {
+    font-size: 10px;
   }
 }
 @media (max-width: 568px) {
-  .header__title {
-    font-size: 24px;
-  }
-  .social-link {
-    min-width: 40px;
-    height: 40px;
-  }
-  .link-phone {
-    width: 185px;
-    height: 40px;
-    font-size: 12px;
-  }
-  .header__company-box {
-    border: none;
-    padding: 0;
-  }
   .link-email {
-    width: 290px;
-    height: 40px;
-    font-size: 12px;
+    width: 211px;
+    height: 42px;
+    font-size: 11px;
+  }
+  .header__img {
+    width: 298px;
+  }
+  .header__content-box {
+    margin: 0 auto 280px;
+  }
+  .footer .link-phone {
+    width: 211px;
+    height: 42px;
+    border: 2px solid #c2a36c;
+    font-size: 11px;
+  }
+  .footer__content-box {
+    gap: 20px;
   }
   .footer__link-policy {
-    text-align: center;
+    max-width: 204px;
     font-size: 13px;
   }
-  .trust:before,
-  .trust:after {
-    display: none;
+  .offer {
+    margin-bottom: 60px;
+    background-position: bottom left;
+    background-size: 235%;
+  }
+  .offer__inner {
+    gap: 28px;
+    height: 555px;
   }
   .call__img {
     max-width: 220px;
@@ -1345,88 +1487,7 @@ body {
   .call__box {
     padding: 30px 15px 0 15px;
   }
-  .ind__title {
-    font-size: 24px;
-  }
-  .offer__btn {
-    padding: 5px;
-    height: 50px;
-    font-size: 13px;
-  }
-  .offer__inner {
-    gap: 10px;
-  }
-  .offer__title {
-    font-size: 16px;
-  }
-  .loyalty__title {
-    font-size: 24px;
-    margin-bottom: 40px;
-  }
-  .loyalty__item-sale {
-    font-size: 20px;
-  }
-  .loyalty__item-num {
-    font-size: 50px;
-  }
-  .loyalty__item-text {
-    font-size: 16px;
-  }
-  .loyalty__text {
-    font-size: 20px;
-  }
-  .loyalty__box {
-    margin-bottom: 40px;
-  }
-  .direct__title {
-    font-size: 24px;
-  }
-  .direct__slogan {
-    font-size: 14px;
-    padding-bottom: 40px;
-  }
-  .direct__item {
-    width: 100%;
-    height: 445px;
-  }
-  .direct__subtitle {
-    font-size: 26px;
-  }
-  .direct__price {
-    font-size: 15px;
-    margin-bottom: 20px;
-  }
-  .direct__btn {
-    font-size: 13px;
-    padding: 5px 55px;
-    height: 50px;
-  }
-  .section__bottom {
-    padding-bottom: 100px;
-  }
   .popup__form {
     width: 100%;
-  }
-}
-@media (max-width: 374px) {
-  .link-email {
-    width: 100%;
-  }
-  .trust__left-item {
-    width: 100%;
-  }
-  .offer__inner {
-    height: 340px;
-  }
-  .direct__item {
-    height: 385px;
-  }
-  .direct__item {
-    background-size: 85%;
-  }
-  .offer__btn {
-    padding: 3px;
-    height: 40px;
-    font-size: 11px;
   }
 }
