@@ -268,7 +268,7 @@ body {
   align-self: flex-start;
   align-items: center;
   gap: 41px;
-  padding: 20px 50px;
+  padding: 0 50px;
   border-radius: 77px;
   border: 2px solid rgba(194, 163, 108, 0.5);
   margin-bottom: 128px;
@@ -388,8 +388,10 @@ body {
   flex-wrap: wrap;
 }
 .trust__img {
+  position: relative;
   width: 100%;
   object-fit: cover;
+  z-index: 1;
 }
 .trust__left {
   position: relative;
@@ -1172,7 +1174,7 @@ body {
   }
   .header__company-box {
     gap: 15px;
-    padding: 0px 28px;
+    padding: 0 28px;
     border-radius: 40px;
     margin: 0 auto 25px;
   }
