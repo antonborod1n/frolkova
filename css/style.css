@@ -953,7 +953,7 @@ body {
   align-items: center;
   flex-direction: column;
   width: 759px;
-  height: 800px;
+  height: 790px;
   transform: translate(-50%);
   border-radius: 66px;
   background: #1b1a1a;
@@ -962,6 +962,7 @@ body {
   padding: 35px 30px;
   z-index: 100;
 }
+
 .popup__input {
   font-size: 20px;
   width: 100%;
@@ -1510,6 +1511,9 @@ body {
     width: 90%;
     border-radius: 30px;
     padding: 20px;
+  }
+  .popup2 .popup__inner {
+    height: 60%;
   }
   .popup__title {
     font-size: 20px;
