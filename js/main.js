@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="popup__title">
         «Благодарю за доверие! В ближайшее время я свяжусь с Вами для уточнения параметров. Ваш эксперт <span>Елена</span>»
         </div>
-        <a href="/" class="popup__btn popup__btn-prev">Вернуться на главную</a>
+        <button class="popup__btn popup__btn-prev popup__close">Вернуться на главную</button>
       </div>`,
       failure: 'Что-то пошло не так...',
     };
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="popup__title">
         «Благодарю за доверие! В ближайшее время я свяжусь с Вами для уточнения параметров. Ваш эксперт <span>Елена</span>»
         </div>
-        <a href="/" class="popup__btn popup__btn-prev">Вернуться на главную</a>
+        <button class="popup__btn popup__btn-prev popup__close">Вернуться на главную</button>
       </div>`,
       failure: 'Что-то пошло не так...',
     };

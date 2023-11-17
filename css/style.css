@@ -264,15 +264,21 @@ body {
 }
 .header__company-box {
   position: relative;
-  display: inline-flex;
-  align-self: flex-start;
-  align-items: center;
-  gap: 41px;
+  max-width: 580px;
   padding: 0 50px;
   border-radius: 77px;
   border: 2px solid rgba(194, 163, 108, 0.5);
   margin-bottom: 128px;
   z-index: 1;
+}
+.header__company-logo {
+  width: 100%;
+}
+.header__company-item {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .header__img {
   position: absolute;
@@ -435,6 +441,7 @@ body {
   height: 79px;
   border-radius: 66px;
   background: linear-gradient(to bottom, #ffffff, #ffffff00);
+  z-index: 1;
 }
 .trust__left-item {
   width: 326px;
@@ -521,10 +528,11 @@ body {
 .trust__item-text {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 15px;
   color: #fff;
   min-height: 76px;
-  padding: 34px 45px 5px;
+  /*   padding: 34px 45px 5px; */
   border-radius: 66px;
   background-color: #302f2f;
   box-shadow: 0px 0px 34px 0px rgba(194, 163, 108, 0.05);
@@ -957,6 +965,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
   font-family: 'Unbounded', sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -1095,8 +1104,9 @@ body {
     height: 40px;
   }
   .social-link .telegram {
-    width: 17px;
-    height: 20px;
+    width: 19px;
+    height: 19px;
+    padding-right: 3px;
   }
   .social-link .wats {
     width: 20px;
@@ -1146,9 +1156,6 @@ body {
   .burger-menu {
     display: block;
   }
-  .header {
-    background-image: none;
-  }
   .header__inner {
     flex-direction: column;
     align-items: flex-end;
@@ -1174,7 +1181,8 @@ body {
   }
   .header__company-box {
     gap: 15px;
-    padding: 0 28px;
+    max-width: 380px;
+    padding: 0;
     border-radius: 40px;
     margin: 0 auto 25px;
   }
@@ -1268,8 +1276,8 @@ body {
   }
   .trust__item-text {
     width: 319px;
-    min-height: 42px;
-    padding: 14px 45px 5px;
+    min-height: 43px;
+    /*     padding: 14px 45px 5px; */
     font-size: 10px;
   }
   .trust__list {
@@ -1460,6 +1468,12 @@ body {
   }
   .header__content-box {
     margin: 0 auto 280px;
+  }
+  .header__company-box {
+    max-width: 100%;
+  }
+  .header__company-item {
+    gap: 20px;
   }
   .footer .link-phone {
     width: 211px;
