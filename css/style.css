@@ -574,6 +574,9 @@ body {
   box-shadow: 0px 0px 34px 0px rgba(194, 163, 108, 0.05);
   backdrop-filter: blur(15px);
 }
+.trust__item-text span {
+  padding: 0 10px;
+}
 .call {
   padding: 100px 0 195px;
 }
@@ -885,7 +888,8 @@ body {
 }
 
 /* MODAL */
-.popup {
+.popup__policy,
+.popup__sogl {
   display: none;
   position: fixed;
   top: 0;
@@ -897,6 +901,7 @@ body {
   box-shadow: 0px 0px 34px 0px rgba(194, 163, 108, 0.05);
   backdrop-filter: blur(4.599999904632568px);
 }
+
 .popup2 {
   display: none;
   position: fixed;
@@ -909,11 +914,35 @@ body {
   box-shadow: 0px 0px 34px 0px rgba(194, 163, 108, 0.05);
   backdrop-filter: blur(4.599999904632568px);
 }
-.popup.active {
-  display: block;
+.popup__data {
+  color: #c2974d;
+  cursor: pointer;
 }
+.popup__sogl.active,
+.popup__policy.active,
 .popup2.active {
   display: block;
+}
+.popup__content {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.popup__content p {
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.popup__content ul {
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.popup__content ul li,
+.popup__content ol li {
+  color: #fff;
+  font-size: 12px;
 }
 .popup__inner {
   position: fixed;
@@ -924,6 +953,7 @@ body {
   align-items: center;
   flex-direction: column;
   width: 759px;
+  height: 800px;
   transform: translate(-50%);
   border-radius: 66px;
   background: #1b1a1a;
@@ -1245,7 +1275,14 @@ body {
     margin: 0 auto 330px;
   }
   .header__name {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 154px;
+    height: 26px;
+    padding: 0;
+    margin: 0 auto 7px;
   }
   .header__slogan {
     font-size: 10px;

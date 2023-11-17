@@ -13,9 +13,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const modal = document.querySelector('.popup');
     const modal2 = document.querySelector('.popup2');
     const close = document.querySelectorAll('.popup__close');
-    const btnsIntr = document.querySelectorAll('.popup__btn-intr');
     const inputIntr = document.querySelector('.popup__input-intr');
     const popupBtnBox = document.querySelector('.popup__btn-box');
+    const policy = document.querySelector('.footer__link-policy');
+    const dataBtn = document.querySelector('.popup__data');
+    const popupPolicy = document.querySelector('.popup__policy');
+    const popupSogl = document.querySelector('.popup__sogl');
+
+    policy.addEventListener('click', function () {
+      popupPolicy.classList.add('active');
+    });
+
+    dataBtn.addEventListener('click', function () {
+      popupSogl.classList.add('active');
+    });
 
     btn.forEach((item) => {
       item.addEventListener('click', function () {
@@ -29,25 +40,29 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
 
-    inputIntr.addEventListener('click', function () {
-      popupBtnBox.classList.toggle('active');
-    });
-
-    btnsIntr.forEach((item) => {
-      item.addEventListener('click', function () {
-        inputIntr.value = this.innerHTML;
-      });
-    });
-
     close.forEach((item) => {
       item.addEventListener('click', function () {
         modal2.classList.remove('active');
+        popupPolicy.classList.remove('active');
+        popupSogl.classList.remove('active');
       });
     });
 
     modal2.addEventListener('click', function (e) {
       if (e.target === modal2) {
         modal2.classList.remove('active');
+      }
+    });
+
+    popupPolicy.addEventListener('click', function (e) {
+      if (e.target === popupPolicy) {
+        popupPolicy.classList.remove('active');
+      }
+    });
+
+    popupSogl.addEventListener('click', function (e) {
+      if (e.target === popupSogl) {
+        popupSogl.classList.remove('active');
       }
     });
   }
