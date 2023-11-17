@@ -521,6 +521,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 553px;
   min-height: 79px;
   border-radius: 66px;
   background: linear-gradient(to bottom, #ffffff, #ffffff00);
@@ -531,8 +532,8 @@ body {
   align-items: center;
   font-size: 15px;
   color: #fff;
+  width: 551px;
   min-height: 76px;
-  /*   padding: 34px 45px 5px; */
   border-radius: 66px;
   background-color: #302f2f;
   box-shadow: 0px 0px 34px 0px rgba(194, 163, 108, 0.05);
@@ -998,6 +999,9 @@ body {
   text-align: center;
 }
 .popup__btn-box {
+  display: none;
+}
+.popup__btn-box.active {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1277,7 +1281,6 @@ body {
   .trust__item-text {
     width: 319px;
     min-height: 43px;
-    /*     padding: 14px 45px 5px; */
     font-size: 10px;
   }
   .trust__list {
@@ -1445,8 +1448,8 @@ body {
     padding: 10px 40px 10px 15px;
   }
   .popup__close {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
   }
   .popup__btn {
     width: 100%;

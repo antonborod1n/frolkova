@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const close = document.querySelectorAll('.popup__close');
     const btnsIntr = document.querySelectorAll('.popup__btn-intr');
     const inputIntr = document.querySelector('.popup__input-intr');
+    const popupBtnBox = document.querySelector('.popup__btn-box');
 
     btn.forEach((item) => {
       item.addEventListener('click', function () {
@@ -26,6 +27,10 @@ document.addEventListener('DOMContentLoaded', function () {
       item.addEventListener('click', function () {
         modal2.classList.add('active');
       });
+    });
+
+    inputIntr.addEventListener('click', function () {
+      popupBtnBox.classList.toggle('active');
     });
 
     btnsIntr.forEach((item) => {
@@ -63,11 +68,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = popup.querySelector('.popup__form');
     const form2 = popup2.querySelector('.popup__form');
     const inputs = document.querySelectorAll('.popup__input');
-
-    console.log(popup);
-    console.log(form);
-    console.log(popup2);
-    console.log(form2);
 
     const message = {
       success: `<div class="popup__inner">
