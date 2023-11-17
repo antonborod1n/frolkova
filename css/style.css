@@ -1185,7 +1185,7 @@ body {
   }
   .header__company-box {
     gap: 15px;
-    max-width: 380px;
+    max-width: 330px;
     padding: 0;
     border-radius: 40px;
     margin: 0 auto 25px;
@@ -1472,9 +1472,6 @@ body {
   .header__content-box {
     margin: 0 auto 280px;
   }
-  .header__company-box {
-    max-width: 100%;
-  }
   .footer .link-phone {
     width: 211px;
     height: 42px;
@@ -1507,3 +1504,60 @@ body {
     width: 100%;
   }
 }
+
+.trust__left-border1 {
+  left: 220px;
+  top: 50%;
+  animation: rot 10s infinite linear;
+}
+.trust__left-border2 {
+  left: 220px;
+  top: 50%;
+  animation: rot2 10s infinite linear;
+}
+.trust__left-border3 {
+  right: 220px;
+  top: 50%;
+  animation: rot3 10s infinite linear;
+}
+.trust__left-border4 {
+  right: 220px;
+  top: 50%;
+  animation: rot4 10s infinite linear;
+}
+
+@keyframes rot {
+  from {
+    transform: rotate(0deg) translate(-325px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(-325px) rotate(-360deg);
+  }
+}
+
+/* @keyframes rot2 {
+  from {
+    transform: rotate(0deg) translate(325px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(325px) rotate(-360deg);
+  }
+} */
+
+@keyframes rot3 {
+  from {
+    transform: rotate(0deg) translate(325px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(325px) rotate(-360deg);
+  }
+}
+
+/* @keyframes rot4 {
+  from {
+    transform: rotate(0deg) translate(-325px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(-325px) rotate(-360deg);
+  }
+} */
