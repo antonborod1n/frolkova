@@ -992,10 +992,16 @@ body {
   padding: 10px;
   text-align: center;
 }
+.popup__label-intr {
+  position: relative;
+}
 .popup__btn-box {
   display: none;
 }
 .popup__btn-box.active {
+  position: absolute;
+  top: 90px;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
