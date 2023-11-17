@@ -1266,7 +1266,7 @@ body {
     padding: 30px 0;
   }
   .footer__box-img {
-    display: none;
+    right: -15px;
   }
   .footer__title {
     font-size: 20px;
@@ -1400,11 +1400,11 @@ body {
     font-size: 11px;
   }
   .loyalty {
-    padding-bottom: 100px;
+    padding-bottom: 147px;
   }
   .loyalty__title {
     font-size: 21px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
   .loyalty__item-sale {
     font-size: 30px;
@@ -1413,16 +1413,27 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 47px;
-    margin-bottom: 80px;
+    margin-bottom: 180px;
   }
   .loyalty__text {
+    font-size: 17px;
+  }
+  .loyalty__text span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 9px;
+    width: 247px;
+    height: 42px;
+    border-radius: 57px;
+    border: 1px solid #c2a36c;
     font-size: 20px;
   }
   .loyalty__item-num {
     font-size: 70px;
   }
   .loyalty__item-text {
-    font-size: 20px;
+    font-size: 17px;
   }
   .direct__border {
     width: 296px;
@@ -1456,7 +1467,7 @@ body {
     height: 45px;
   }
   .section__bottom {
-    padding-bottom: 117px;
+    padding-bottom: 49px;
   }
   .popup__inner {
     width: 90%;
