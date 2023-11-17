@@ -41,16 +41,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     close.forEach((item) => {
       item.addEventListener('click', function () {
-        modal.classList.remove('active');
+        /* modal.classList.remove('active'); */
         modal2.classList.remove('active');
       });
     });
 
-    modal.addEventListener('click', function (e) {
+    /*     modal.addEventListener('click', function (e) {
       if (e.target === modal) {
         modal.classList.remove('active');
       }
-    });
+    }); */
 
     modal2.addEventListener('click', function (e) {
       if (e.target === modal2) {
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
   modal();
 
   //Форма отправки
-  const forms = () => {
+  /*   const forms = () => {
     const popup = document.querySelector('.popup');
     const popup2 = document.querySelector('.popup2');
     const form = popup.querySelector('.popup__form');
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   };
 
-  forms();
+  forms(); */
 
   const formsOrder = () => {
     const popup2 = document.querySelector('.popup2');
@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function () {
   formsOrder();
 
   //Маска для телефона
-  const mask = (selector) => {
+  /*   const mask = (selector) => {
     let setCursorPosition = (pos, elem) => {
       elem.focus();
 
@@ -257,5 +257,5 @@ document.addEventListener('DOMContentLoaded', function () {
     input.addEventListener('blur', createMask);
   };
 
-  mask('.popup__input');
+  mask('.popup__input'); */
 });

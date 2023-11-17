@@ -273,12 +273,7 @@ body {
 }
 .header__company-logo {
   width: 100%;
-}
-.header__company-item {
-  width: 220px;
-  display: flex;
-  align-items: center;
-  gap: 40px;
+  padding: 0 10px;
 }
 .header__img {
   position: absolute;
@@ -988,7 +983,6 @@ body {
   max-width: 356px;
   text-align: center;
   color: #8c9194;
-  font-variant-numeric: lining-nums proportional-nums;
   font-size: 12px;
   line-height: 120%;
   letter-spacing: -0.12px;
@@ -1474,9 +1468,6 @@ body {
   }
   .header__company-box {
     max-width: 100%;
-  }
-  .header__company-item {
-    gap: 20px;
   }
   .footer .link-phone {
     width: 211px;

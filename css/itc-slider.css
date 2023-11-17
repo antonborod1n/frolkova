@@ -30,8 +30,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 100%;
-  max-width: 100%;
+  flex: 0 0 50%;
+  max-width: 50%;
   user-select: none;
   will-change: transform;
 }
