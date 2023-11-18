@@ -84,9 +84,11 @@ document.addEventListener('DOMContentLoaded', function () {
         />
       </svg>
     </button>
-        <div class="popup__title">
-        «Благодарю за доверие! В ближайшее время я свяжусь с Вами для уточнения параметров. Ваш эксперт <span>Елена</span>»
-        </div>
+        <div class="popup__title-done">
+          <div>«Благодарю за доверие!</div> 
+          <div>ближайшее время я свяжусь с Вами для уточнения параметров.</div>
+          <div>Ваш эксперт <span>Елена</span>»</div>
+          </div>
         <button class="popup__btn popup__btn-prev popup__close">Вернуться на главную</button>
       </div>`,
       failure: 'Что-то пошло не так...',
