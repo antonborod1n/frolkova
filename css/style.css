@@ -787,9 +787,19 @@ body {
   font-size: 40px;
   line-height: 112%;
 }
-.loyalty__text span {
+.loyalty__text-decor {
   color: #c2a36c;
   text-transform: uppercase;
+}
+
+.loyalty__text-descr {
+  font-family: 'Unbounded', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  line-height: 112%;
 }
 .direct__title {
   font-family: 'Unbounded', sans-serif;
@@ -1429,7 +1439,7 @@ body {
   .loyalty__text {
     font-size: 17px;
   }
-  .loyalty__text span {
+  .loyalty__text-decor {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1439,6 +1449,9 @@ body {
     border-radius: 57px;
     border: 1px solid #c2a36c;
     font-size: 20px;
+  }
+  .loyalty__text-descr {
+    font-size: 13px;
   }
   .loyalty__item-num {
     font-size: 70px;
